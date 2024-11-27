@@ -4476,6 +4476,9 @@ img {
         width: calc(160px * 10) !important; /* Total width for 8 cards, each 264px wide */
         animation: news2_anim 10s linear infinite !important; /* Adjust duration for smoother scrolling */
     }
+    .news2-lists:hover {
+        animation-play-state: paused !important;
+    }
 
     @keyframes news2_anim {
         0% {
@@ -6469,6 +6472,8 @@ img {
 }
 .footer-area .footer-bottom .footer-contact-info .footer-contact-info-item p a:hover{
     color: whitesmoke;
+    /* color: #e8131a; */
+
 }
 .copyright-area {
     padding: 30px 0 50px 0;
