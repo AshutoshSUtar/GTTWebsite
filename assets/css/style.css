@@ -4473,7 +4473,7 @@ img {
 @media (max-width: 1200px) {
     .news2-lists {
         display: flex;
-        width: calc(130px * 8) !important; /* Total width for 8 cards, each 264px wide */
+        width: calc(160px * 10) !important; /* Total width for 8 cards, each 264px wide */
         animation: news2_anim 10s linear infinite !important; /* Adjust duration for smoother scrolling */
     }
 
