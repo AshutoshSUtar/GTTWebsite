@@ -418,7 +418,9 @@
         width: 8px;
     }
     .about2-area .about2-inner-box .section-title {
-        letter-spacing: -2px;
+        /* letter-spacing: -2px; */
+        letter-spacing: 0px;
+
     }
     .project-item .project-item-inner h2 {
         font-size: 34px;
