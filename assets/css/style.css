@@ -4455,11 +4455,9 @@ img {
 /* Media query for mobile screens (max-width: 500px) */
 @media (max-width: 500px) {
     .news2-lists {
-        justify-content: center; /* Center the items on mobile screens */
-    }
-
-    .news2-card {
-        flex: 1 1 100%; /* 1 item per row */
+        display: flex;
+        width: calc(20px * 8); 
+       
     }
 
     @keyframes news2_anim {
@@ -4467,10 +4465,29 @@ img {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-300%); /* Adjusted for mobile */
+            transform: translateX(-800px); 
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .news2-lists {
+        display: flex;
+        width: calc(130px * 8) !important; /* Total width for 8 cards, each 264px wide */
+        animation: news2_anim 10s linear infinite !important; /* Adjust duration for smoother scrolling */
+    }
+
+    @keyframes news2_anim {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-2112px); /* Exact width of 8 cards (264px * 8) */
+        }
+    }
+}
+
+
 
 /* Keyframe animation for sliding */
 @keyframes news2_anim {
